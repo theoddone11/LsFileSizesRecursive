@@ -3,7 +3,7 @@ import os
 #script for figuring out why git is rejecting large files
 
 def lsfilescwd(cwd):
-    print(cwd)
+    #print(cwd)
     pwd = ""
     for entry in os.listdir(cwd):
         if(entry):
@@ -21,5 +21,3 @@ def lsfilescwd(cwd):
                     print(cfile + " " + str(statinfo.st_size / _mb_) + "MB")
             #lsfilescwd(pwd)
 lsfilescwd(os.getcwd())
-
-
