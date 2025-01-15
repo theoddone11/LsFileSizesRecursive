@@ -17,7 +17,7 @@ def lsfilescwd(cwd):
             else:
                 fsize = statinfo.st_size
                 _mb_ = 1000000
-                if(fsize > (_mb_)):
+                if(fsize > _mb_):
                     print(cfile + " " + str(statinfo.st_size / _mb_) + "MB")
             #lsfilescwd(pwd)
 lsfilescwd(os.getcwd())
