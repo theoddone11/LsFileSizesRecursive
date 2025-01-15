@@ -21,3 +21,4 @@ def lsfilescwd(cwd):
                     print(cfile + " " + str(statinfo.st_size / _mb_) + "MB")
             #lsfilescwd(pwd)
 lsfilescwd(os.getcwd())
+input()
